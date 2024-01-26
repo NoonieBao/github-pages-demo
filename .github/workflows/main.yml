@@ -20,7 +20,7 @@ jobs:
           ref: main
       - name: Print Current Directory
         run: |
-          cd web
+          cd app
           tree -L 1
           npm install
           npm run build
