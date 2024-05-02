@@ -2,13 +2,8 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <div id="version">
-      {process.env.VERSION}
-      {process.env.COMMITHASH}
-      {process.env.NODE_ENV === 'development' && process.env.BRANCH &&
-         <span>{process.env.BRANCH}</span>
-      }
-    </div>
+    <p>版本号：{{ process.env.VERSION }}</p>
+    <p>提交哈希：{{ process.env.COMMITHASH }}</p>
   </div>
 </template>
 
