@@ -2,6 +2,13 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="version">
+      {process.env.VERSION}
+      {process.env.COMMITHASH}
+      {process.env.NODE_ENV === 'development' && process.env.BRANCH &&
+         <span>{process.env.BRANCH}</span>
+      }
+    </div>
   </div>
 </template>
 
