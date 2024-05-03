@@ -23,7 +23,7 @@ const gitRevisionPlugin = new GitRevisionPlugin()
 // })
 
 module.exports = {
-    publicPath: './',
+  publicPath: './',
   outputDir: 'dist', // dist
   assetsDir: 'static',
   transpileDependencies: true,
